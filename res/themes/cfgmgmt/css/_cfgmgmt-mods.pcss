@@ -1,0 +1,125 @@
+/* sidebar blurred avatar background */
+//
+/* if backdrop-filter is supported, */
+/* set the user avatar (if any) as a background so */
+/* it can be blurred by the tag panel and room list */
+
+.mx_RoomSublist_showNButton {
+    background-color: transparent !important;
+}
+
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.mx_WhoIsTypingTile_label {
+    color: var(--cfg-blue-700);
+}
+
+/** presence indicator **/
+/* presence icon colors */
+/* .mx_PresenceIconView {
+    .mx_PresenceIconView_online {
+        color: var(--cfg-ocean-green);
+    }
+    .mx_PresenceIconView_offline,
+    .mx_PresenceIconView_dnd {
+        color: var(--schedule-blue-light);
+    }
+    .mx_PresenceIconView_unavailable {
+        color: var(--schedule-red);
+    }
+}
+
+.mx_WithPresenceIndicator {
+    .mx_WithPresenceIndicator_icon_online::before {
+        background-color: var(--cfg-ocean-green);
+    }
+} */
+
+/* .mx_RoomListItemView {
+    .mx_RoomListItemView_content {
+        border-bottom-color: transparent;
+    }
+} */
+/***********/
+
+.mx_Dialog_title {
+    color: var(--cfg-green-800);
+}
+
+/* h2 {
+    color: var(--cfg-green-800);
+} /** big title in settings, room title in timeline, .... **/
+
+
+/* poll icon in poll */
+.mx_MPollBody legend svg {
+    color: var(--cfg-blue-700);
+}
+
+/* trash can icon next to deleted message in timeline */
+.mx_RedactedBody::before {
+    background-color: var(--schedule-red);
+}
+
+/* import & export icons in Encryption tab in settings */
+._button_187yx_8[data-kind="secondary"] > svg {
+    color: var(--cfg-blue-700);
+}
+
+/* circular button (close, roomlist filter, back...) */
+._icon-button_1pz9o_8[data-kind="secondary"] {
+    border: 1px solid hsla(0, 0%, 16%, 0.284);
+}
+.mx_Dialog_cancelButton {
+    border: 1px solid hsla(0, 0%, 16%, 0.284);
+}
+
+/* icon colors & border colors in MessageActionBar */
+.mx_MessageActionBar {
+    border: var(--cpd-border-width-1) solid var(--cpd-color-border-interactive-secondary);
+    &:hover {
+        border-color: var(--cpd-color-border-interactive-primary);
+    }
+}
+.mx_MessageActionBar_iconButton {
+    svg {
+        color: var(--cpd-color-icon-tertiary);
+    }
+    &:hover svg {
+        color: var(--cpd-color-icon-primary);
+    }
+}
+
+.mx_ThreadPanel_replies_amount {
+    color: var(--cpd-color-text-primary);
+}
+
+/* rest state color icon in space create dialog */
+.mx_SpaceCreateMenuType::before {
+    background-color: var(--cfg-blue-600);
+}
+
+
+/** MessageComposer custimizations **/
+.mx_MessageComposer_sendMessage {
+    background-color: var(--cfg-green-600);
+}
+/* icons in MessageComposer context menu */
+.mx_IconizedContextMenu_item path {
+    fill: var(--cfg-green-700);
+}
+
+
+/** Timeline customizations **/
+/* chat timeline and message timestamp */
+.mx_TimelineSeparator > hr {
+    border-bottom-color: var(--cfg-blue-400);
+}
+
+.mx_DateSeparator_dateHeading {
+    color: var(--cfg-blue-800);
+}
