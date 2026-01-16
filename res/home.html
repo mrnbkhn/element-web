@@ -1,0 +1,304 @@
+<!doctype html>
+
+<style>
+    .mx_HomePage {
+        max-width: 100% !important;
+    }
+
+    .container {
+        margin-top: 2vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .container a {
+        color: #2f7ddc;
+        font-weight: bold;
+    }
+
+    .welcome {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .welcome_text {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #038888;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        color: #444;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #700;
+    }
+
+    .subtitle {
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+
+    /* 
+    .rooms {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 16px;
+    }  */
+
+    .rooms {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .info-box {
+        background: #c5c5c5;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid #3d9043;
+        border-right: 4px solid #2596be;
+    }
+
+    .welcome > .mx_AccessibleButton {
+        color: #fff;
+        font-size: 1.25em;
+        margin-bottom: 10px;
+        padding: 0.5em 1em;
+        background-color: hsl(137, 50%, 37%);
+        border: none;
+        vertical-align: middle;
+    }
+
+    .cards {
+        border: 1px solid #e3e8f0;
+        border-radius: 8px;
+        width: 130px;
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: ease-in 0.5s transform;
+        -webkit-transition: ease 0.5s transform;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+    }
+
+    .cards:hover {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.03);
+        box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.03);
+    }
+
+    .cards p {
+        font-weight: 700;
+    }
+
+    .button {
+        padding: 10px 32px 10px 32px;
+        border: none;
+        border-radius: 8px;
+        width: inherit;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #3479c4;
+        font-size: 16px;
+        font-weight: 500;
+        transition: ease-in 0.5s transform;
+        -webkit-transition: ease 0.5s transform;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+    }
+
+    .button:hover {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+</style>
+
+<section class="container">
+    <!-- LOGO + Intro -->
+    <div class="welcome">
+        <a href="https://cfgmgmtcamp.org/ghent2026/" target="_blank" rel="noopener noreferrer">
+            <svg width="720" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.94 130.84">
+                <defs>
+                    <style>
+                        .cls-1,
+                        .cls-2 {
+                            stroke-width: 0px;
+                        }
+
+                        .cls-1,
+                        .cls-3 {
+                            fill: #3c7bbb;
+                        }
+
+                        .cls-2,
+                        .cls-4 {
+                            fill: #3a9245;
+                        }
+
+                        .cls-5 {
+                            letter-spacing: 0em;
+                        }
+
+                        .cls-6 {
+                            letter-spacing: -0.05em;
+                        }
+
+                        .cls-3,
+                        .cls-4 {
+                            font-family: Chivo-Bold, Chivo;
+                            font-size: 43.09px;
+                            font-variation-settings: "wght" 700;
+                            font-weight: 700;
+                        }
+
+                        .cls-7 {
+                            letter-spacing: -0.05em;
+                        }
+
+                        .cls-8 {
+                            letter-spacing: -0.05em;
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <g>
+                        <path
+                            id="puzzle"
+                            class="cls-1"
+                            d="M39.74,37.39c2.27-2.61,5.61-4.26,9.35-4.26,6.85,0,12.41,5.56,12.41,12.41,0,3.73-1.65,7.07-4.26,9.35l6.27,6.27h0s0,0,0,0l7.82-7.82c1.84,3.14,5.23,5.25,9.13,5.25,5.84,0,10.58-4.74,10.58-10.58,0-3.9-2.11-7.29-5.25-9.13l8.22-8.22-7.82-7.82c3.14-1.84,5.25-5.23,5.25-9.13,0-5.84-4.74-10.58-10.58-10.58-3.9,0-7.29,2.11-9.13,5.25L63.51.16h0s0,0,0,0h0s0,0,0,0l-7.82,7.82c-1.84-3.14-5.23-5.25-9.13-5.25-5.84,0-10.58,4.74-10.58,10.58,0,3.9,2.11,7.29,5.25,9.13l-8.22,8.22,6.73,6.73Z"
+                        />
+                        <path
+                            id="puzzle-2"
+                            data-name="puzzle"
+                            class="cls-2"
+                            d="M88.78,39.87c2.61,2.27,4.26,5.61,4.26,9.35,0,6.85-5.56,12.41-12.41,12.41-3.73,0-7.07-1.65-9.35-4.26l-6.27,6.27h0s0,0,0,0h0s7.82,7.82,7.82,7.82c-3.14,1.84-5.25,5.23-5.25,9.13,0,5.84,4.74,10.58,10.58,10.58,3.9,0,7.29-2.11,9.13-5.25l8.22,8.22,7.82-7.82c1.84,3.14,5.23,5.25,9.13,5.25,5.84,0,10.58-4.74,10.58-10.58,0-3.9-2.11-7.29-5.25-9.13l8.22-8.22h0s0,0,0,0h0,0s-7.82-7.82-7.82-7.82c3.14-1.84,5.25-5.23,5.25-9.13,0-5.84-4.74-10.58-10.58-10.58-3.9,0-7.29,2.11-9.13,5.25l-8.22-8.22-6.73,6.73Z"
+                        />
+                        <path
+                            id="puzzle-3"
+                            data-name="puzzle"
+                            class="cls-2"
+                            d="M37.23,87.41c-2.61-2.27-4.26-5.61-4.26-9.35,0-6.85,5.56-12.41,12.41-12.41,3.73,0,7.07,1.65,9.35,4.26l6.27-6.27h0s0,0,0,0h0s-7.82-7.82-7.82-7.82c3.14-1.84,5.25-5.23,5.25-9.13,0-5.84-4.74-10.58-10.58-10.58-3.9,0-7.29,2.11-9.13,5.25l-8.22-8.22-7.82,7.82c-1.84-3.14-5.23-5.25-9.13-5.25-5.84,0-10.58,4.74-10.58,10.58,0,3.9,2.11,7.29,5.25,9.13L0,63.64h0s0,0,0,0h0,0s7.82,7.82,7.82,7.82c-3.14,1.84-5.25,5.23-5.25,9.13,0,5.84,4.74,10.58,10.58,10.58,3.9,0,7.29-2.11,9.13-5.25l8.22,8.22,6.73-6.73Z"
+                        />
+                        <path
+                            id="puzzle-4"
+                            data-name="puzzle"
+                            class="cls-1"
+                            d="M87.27,89.92c-2.27,2.61-5.61,4.26-9.35,4.26-6.85,0-12.41-5.56-12.41-12.41,0-3.73,1.65-7.07,4.26-9.35l-6.27-6.27h0s0,0,0,0l-7.82,7.82c-1.84-3.14-5.23-5.25-9.13-5.25-5.84,0-10.58,4.74-10.58,10.58,0,3.9,2.11,7.29,5.25,9.13l-8.22,8.22,7.82,7.82c-3.14,1.84-5.25,5.23-5.25,9.13,0,5.84,4.74,10.58,10.58,10.58,3.9,0,7.29-2.11,9.13-5.25l8.22,8.22h0s0,0,0,0h0s0,0,0,0l7.82-7.82c1.84,3.14,5.23,5.25,9.13,5.25,5.84,0,10.58-4.74,10.58-10.58,0-3.9-2.11-7.29-5.25-9.13l8.22-8.22-6.73-6.73Z"
+                        />
+                    </g>
+                    <text
+                        id="Config_Management_Camp"
+                        data-name="ConfigManagement Camp"
+                        class="cls-3"
+                        transform="translate(135.64 116.32) scale(.84 1)"
+                    >
+                        <tspan x="0" y="0">Camp</tspan>
+                    </text>
+                    <text class="cls-4" transform="translate(133.52 76.47) scale(.84 1)">
+                        <tspan class="cls-8" x="0" y="0">M</tspan>
+                        <tspan class="cls-6" x="40.11" y="0">anageme</tspan>
+                        <tspan class="cls-7" x="217.06" y="0">n</tspan>
+                        <tspan class="cls-6" x="240.63" y="0">t</tspan>
+                    </text>
+                    <text class="cls-3" transform="translate(135.64 36.32) scale(.84 1)">
+                        <tspan x="0" y="0">Co</tspan>
+                        <tspan class="cls-5" x="55.23" y="0">n</tspan>
+                        <tspan x="80.96" y="0">fig</tspan>
+                    </text>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <div class="welcome welcome_text">
+        <h1 class="welcome_text">Welcome to Config Management Camp 2025</h1>
+        <!-- <p class="subtitle">Testing Element-web with custom home page</p> -->
+        <p>
+            Welcome to our virtual conference! Thanks to the fantastic work of the Matrix.org team, Config Management
+            Camp offers discussion spaces across several <a href="#roomlinks">rooms</a>. We suggest using the web app
+            for the smoothest experience.
+        </p>
+        <a href="https://cfgmgmtcamp.org/ghent2026/schedule/">Link to schedule again, just in case.</a>
+    </div>
+
+    <div class="info-box">
+        <p><strong>Speaker dinner:</strong> This is a special event for speakers and organizers.</p>
+    </div>
+
+    <!-- Useful links -->
+    <div class="welcome welcome_text">
+        <a
+            class="mx_AccessibleButton mx_AccessibleButton_hasKind mx_AccessibleButton_kind_primary"
+            href="https://chat.configmanagementcamp.org/#/room/#cfgmgmt2025:configmanagementcamp.org"
+            >cfgmgmt 2025 Conference Space</a
+        >
+    </div>
+    <div class="welcome welcome_text">
+        <a
+            class="mx_AccessibleButton mx_AccessibleButton_hasKind mx_AccessibleButton_kind_primary"
+            href="https://cfgmgmtcamp.org/ghent2026/schedule/"
+            >Schedule</a
+        >
+    </div>
+
+    <div class="container">
+        <a id="roomlinks"></a>
+        <h2>Rooms</h2>
+        <div class="rooms">
+            <!-- Room cards -->
+            <div class="cards">
+                <p>General Chat</p>
+                <a href="#/room/#test-general:matrix.org">
+                    <div class="button">Main discussion room</div>
+                </a>
+            </div>
+
+            <div class="cards">
+                <p>Cafetaria</p>
+                <a href="#/room/#test-lightning:matrix.org">
+                    <div class="button">Lunch break room</div>
+                </a>
+            </div>
+
+            <div class="cards">
+                <p>Evening events</p>
+                <a href="#/room/#test-workshops:matrix.org">
+                    <div class="button">Post talks events</div>
+                </a>
+            </div>
+
+            <!-- <div>
+            <a href="#/room/#test-support:matrix.org" class="room-link">
+                <strong>Support</strong>
+                <span>Get help here</span>
+            </a>
+        </div> -->
+        </div>
+    </div>
+</section>
