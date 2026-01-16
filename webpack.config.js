@@ -37,6 +37,9 @@ const cssThemes = {
     "theme-dark": "./res/themes/dark/css/dark.pcss",
     "theme-light-custom": "./res/themes/light-custom/css/light-custom.pcss",
     "theme-dark-custom": "./res/themes/dark-custom/css/dark-custom.pcss",
+    /* custom themes */
+    "theme-light-cfgmgmt": "./res/themes/cfgmgmt/css/cfgmgmt.pcss",
+
 };
 
 // See docs/customisations.md
@@ -680,6 +683,7 @@ module.exports = (env, argv) => {
                     "res/jitsi_external_api.min.js.LICENSE.txt",
                     "res/manifest.json",
                     "res/welcome.html",
+                    "res/home.html",
                     { from: "welcome/**", context: path.resolve(__dirname, "res") },
                     { from: "themes/**", context: path.resolve(__dirname, "res") },
                     { from: "vector-icons/**", context: path.resolve(__dirname, "res") },
@@ -775,6 +779,11 @@ module.exports = (env, argv) => {
 
             // Disable host check
             allowedHosts: "all",
+
+            // watchFiles: [
+            //     "res/**/*",
+            //     "res/themes/cfgmgmt/css/**/*.pcss",
+            // ],
         },
     };
 };
