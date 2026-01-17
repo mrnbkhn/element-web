@@ -1,15 +1,25 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://matrix-client.matrix.org",
-            "server_name": "matrix.org"
+            "base_url": "http://localhost:8008",
+            "server_name": "localhost"
         },
         "m.identity_server": {
             "base_url": "https://vector.im"
         }
     },
+    "embeddedPages": {
+        "home_url": "home.html"
+    },
+    "branding": {
+        "welcome_background_url": "themes/cfgmgmt/img/cfgmgmt_talk.jpg",
+        "auth_header_logo_url": "themes/cfgmgmt/img/cfg_logo.svg"
+    },
+    "login_for_welcome": false,
     "disable_custom_urls": false,
+    "guest_user_allow_list": null,
     "disable_guests": false,
+    "allow_guest_access_to_public_rooms": true,
     "disable_login_language_selector": false,
     "disable_3pid_login": false,
     "force_verification": false,
@@ -27,16 +37,15 @@
     "show_labs_settings": false,
     "features": {},
     "default_federate": true,
-    "default_theme": "light",
+    "default_theme": "light-cfgmgmt",
     "room_directory": {
-        "servers": ["matrix.org"]
+        "servers": [
+            "matrix.org"
+        ]
     },
     "enable_presence_by_hs_url": {
         "https://matrix.org": false,
         "https://matrix-client.matrix.org": false
-    },
-    "setting_defaults": {
-        "breadcrumbs": true
     },
     "jitsi": {
         "preferred_domain": "meet.element.io"
@@ -46,5 +55,11 @@
         "participant_limit": 8,
         "brand": "Element Call"
     },
-    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
+    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx",
+
+    "settingDefaults": {
+        "UIFeature.registration": false,
+        "UIFeature.widgets": true,
+        "breadcrumbs": true
+    }
 }
