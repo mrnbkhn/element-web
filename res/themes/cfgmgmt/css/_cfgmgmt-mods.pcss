@@ -54,7 +54,6 @@ a:visited {
     color: var(--cfg-green-800);
 } /** big title in settings, room title in timeline, .... **/
 
-
 /* poll icon in poll */
 .mx_MPollBody legend svg {
     color: var(--cfg-blue-700);
@@ -103,7 +102,6 @@ a:visited {
     background-color: var(--cfg-blue-600);
 }
 
-
 /** MessageComposer custimizations **/
 .mx_MessageComposer_sendMessage {
     background-color: var(--cfg-green-600);
@@ -113,7 +111,6 @@ a:visited {
     fill: var(--cfg-green-700);
 }
 
-
 /** Timeline customizations **/
 /* chat timeline and message timestamp */
 .mx_TimelineSeparator > hr {
@@ -122,4 +119,45 @@ a:visited {
 
 .mx_DateSeparator_dateHeading {
     color: var(--cfg-blue-800);
+}
+
+/* text color room title in RoomHeader */
+.mx_RoomHeader_truncated {
+    color: var(--cfg-blue-800);
+}
+
+.mx_RoomListSearch_search {
+    svg {
+        fill: var(--cpd-color-icon-primary);
+    }
+    span {
+        color: var(--cpd-color-icon-primary);
+        kbd {
+            color: var(--cpd-color-icon-primary);
+        }
+        .mx_RoomListSearch_search_text {
+            color: var(--cpd-color-icon-primary);
+        }
+    }
+}
+
+.mx_RoomListSearch_search:hover {
+    svg {
+        fill: var(--cpd-color-icon-secondary);
+    }
+    span {
+        color: var(--cpd-color-icon-secondary);
+        kbd {
+            color: var(--cpd-color-icon-secondary);
+        }
+        .mx_RoomListSearch_search_text {
+            color: var(--cpd-color-icon-secondary);
+        }
+    }
+}
+
+
+/* conectivity lost to server lost warning icon color */
+.mx_RoomStatusBar_connectionLostBar svg {
+    color: var(--cpd-color-icon-critical-primary);
 }
