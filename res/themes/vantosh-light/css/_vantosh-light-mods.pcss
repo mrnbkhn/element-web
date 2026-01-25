@@ -1,0 +1,478 @@
+/* sidebar blurred avatar background */
+//
+/* if backdrop-filter is supported, */
+/* set the user avatar (if any) as a background so */
+/* it can be blurred by the tag panel and room list */
+
+.mx_RoomSublist_showNButton {
+    background-color: transparent !important;
+}
+
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.mx_WhoIsTypingTile_label {
+    color: var(--cfg-blue-700);
+}
+
+/** presence indicator **/
+/* presence icon colors */
+/* .mx_PresenceIconView {
+    .mx_PresenceIconView_online {
+        color: var(--cfg-ocean-green);
+    }
+    .mx_PresenceIconView_offline,
+    .mx_PresenceIconView_dnd {
+        color: var(--schedule-blue-light);
+    }
+    .mx_PresenceIconView_unavailable {
+        color: var(--schedule-red);
+    }
+}
+
+.mx_WithPresenceIndicator {
+    .mx_WithPresenceIndicator_icon_online::before {
+        background-color: var(--cfg-ocean-green);
+    }
+} */
+
+/* .mx_RoomListItemView {
+    .mx_RoomListItemView_content {
+        border-bottom-color: transparent;
+    }
+} */
+/***********/
+
+/* h2 {
+    color: var(--cfg-green-800);
+} /** big title in settings, room title in timeline, .... **/
+
+/* poll icon in poll */
+.mx_MPollBody legend svg {
+    color: var(--cfg-blue-700);
+}
+
+/* trash can icon next to deleted message in timeline */
+.mx_RedactedBody::before {
+    background-color: $bloody;
+}
+
+.mx_Dialog_title {
+    color: $vt-orange;
+}
+
+/* circular close button in dialog windows */
+.mx_Dialog_cancelButton {
+    border-radius: 50%;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+.mx_Dialog_cancelButton::before {
+    color: $vt-orange;
+    transition: background-color 0.2s ease;
+}
+.mx_Dialog_cancelButton:hover {
+    background-color: $vt-orange;
+    border-color: transparent;
+}
+.mx_Dialog_cancelButton:hover::before {
+    background-color: $white;
+}
+
+/* circular button (close, roomlist filter, back...) */
+._icon-button_1pz9o_8[data-kind="secondary"] {
+    border: 1px solid $vt-orange-lighter;
+    background-color: var(--cpd-color-bg-subtle-secondary);
+    transition: background-color 0.2s ease;
+}
+._icon-button_1pz9o_8[data-kind="secondary"] svg {
+    fill: $vt-orange;
+    transition: fill 0.2s ease;
+}
+._icon-button_1pz9o_8[data-kind="secondary"]:hover {
+    background-color: $vt-orange;
+    border: none;
+}
+._icon-button_1pz9o_8[data-kind="secondary"]:hover svg {
+    fill: $white;
+}
+
+.mx_Dialog_cancelButton {
+    border: 1px solid $vt-orange-lighter;
+}
+
+/* icon colors & border colors in MessageActionBar */
+.mx_MessageActionBar {
+    border: var(--cpd-border-width-1) solid var(--cpd-color-border-interactive-secondary);
+    &:hover {
+        border-color: var(--cpd-color-border-interactive-primary);
+    }
+}
+.mx_MessageActionBar_iconButton {
+    svg {
+        color: var(--cpd-color-icon-tertiary);
+    }
+    &:hover svg {
+        color: var(--cpd-color-icon-primary);
+    }
+}
+
+.mx_ThreadPanel_replies_amount {
+    color: var(--cpd-color-text-primary);
+}
+
+/* rest state color icon in space create dialog */
+.mx_SpaceCreateMenuType::before {
+    background-color: var(--cfg-blue-600);
+}
+
+/** MessageComposer custimizations **/
+.mx_MessageComposer_sendMessage {
+    background-color: $frost-light;
+    &:hover {
+        background-color: $frost;
+    }
+}
+/* icons in MessageComposer context menu */
+.mx_IconizedContextMenu_item path {
+    fill: $vt-orange;
+}
+
+/** Timeline customizations **/
+/* chat timeline and message timestamp */
+.mx_TimelineSeparator > hr {
+    border-bottom-color: $muted-grey;
+}
+
+.mx_DateSeparator_dateHeading {
+    color: $footer-grey;
+}
+
+/* text color room title in RoomHeader */
+/* .mx_RoomHeader_truncated {
+    color: $foot;
+} */
+
+/* .mx_RoomListSearch_search {
+    svg {
+        fill: var(--cpd-color-icon-primary);
+    }
+    span {
+        color: var(--cpd-color-icon-primary);
+        kbd {
+            color: var(--cpd-color-icon-primary);
+        }
+        .mx_RoomListSearch_search_text {
+            color: var(--cpd-color-icon-primary);
+        }
+    }
+}
+
+.mx_RoomListSearch_search:hover {
+    svg {
+        fill: var(--cpd-color-icon-secondary);
+    }
+    span {
+        color: var(--cpd-color-icon-secondary);
+        kbd {
+            color: var(--cpd-color-icon-secondary);
+        }
+        .mx_RoomListSearch_search_text {
+            color: var(--cpd-color-icon-secondary);
+        }
+    }
+} */
+
+/* conectivity lost to server lost warning icon color */
+.mx_RoomStatusBar_connectionLostBar svg {
+    color: var(--cpd-color-icon-critical-primary);
+}
+
+/* Roomlist panel */
+
+.mx_RoomListPanel {
+    background-color: $grey-white;
+}
+
+/* trash icon voice record */
+.mx_VoiceRecordComposerTile_delete svg {
+    color: $bloody;
+}
+
+/* .mx_TabbedView_tabLabel {
+    .mx_TabbedView_tabLabel_text {
+        color: $pinky-light;
+    }
+    span {
+        color: $pinky-light;
+    }
+    svg {
+        color: $pinky-light;
+        :hover {
+            color: $frost;
+        }
+    }
+    :hover {
+        color: $frost;
+
+    }
+}
+
+.mx_TabbedView_tabLabel_active {
+    .mx_TabbedView_tabLabel_text {
+        background-color: $vt-orange-lightest;
+        color: $pinky;
+        :hover {
+            color: $pinky-light;
+        }
+    }
+     svg {
+        color: $pinky;
+        :hover {
+            color: $pinky-light;
+        }
+    }
+} */
+
+/* .mx_TabbedView_tabLabel {
+    color: $pinky;
+}
+
+li.mx_TabbedView {
+    color: $pinky;
+}
+
+
+.mx_TabbedView_tabLabel:hover {
+    color: $frost;
+} */
+
+.mx_TabbedView_tabsOnLeft {
+    .mx_TabbedView_tabLabel:hover,
+    .mx_TabbedView_tabLabel_active {
+        color: $vt-orange;
+
+        .mx_TabbedView_maskedIcon::before {
+            background-color: $vt-orange;
+        }
+    }
+
+    .mx_TabbedView_tabLabel_active {
+        background-color: var(--cpd-color-bg-subtle-secondary);
+    }
+}
+
+.mx_TabbedView_tabLabels {
+    color: $basaltic-grey;
+}
+
+.mx_TabbedView_maskedIcon::before {
+    background-color: $basaltic-grey;
+}
+
+/* roomlist item border */
+.mx_RoomListItemView {
+    .mx_RoomListItemView_content {
+        border-bottom-color: transparent;
+        .mx_RoomListItemView_messagePreview {
+            color: var(--cpd-color-text-secondary);
+        }
+    }
+}
+.mx_RoomListItemView_selected {
+    background-color: var(--cpd-color-bg-action-secondary-pressed);
+}
+
+/* left border color selected event tile in timeline */
+.mx_EventTile[data-layout="irc"].mx_EventTile_isEditing > .mx_EventTile_line,
+.mx_EventTile[data-layout="irc"].mx_EventTile_selected > .mx_EventTile_line,
+.mx_EventTile[data-layout="group"].mx_EventTile_isEditing > .mx_EventTile_line,
+.mx_EventTile[data-layout="group"].mx_EventTile_selected > .mx_EventTile_line {
+    box-shadow: inset var(--EventTile-box-shadow-offset-x) 0 0 var(--EventTile-box-shadow-spread-radius) $vt-orange;
+}
+
+/* non-enabled toggles */
+._ui_udcm8_34 {
+    background-color: $border-grey;
+    border-color: $vt-orange-lighter;
+}
+._ui_udcm8_34::after {
+    --dot-color: $white;
+}
+
+/* contextual menu opened by pressing ... icon in MessageAction bar */
+.mx_ContextualMenu:hover {
+    border-color: $vt-orange;
+}
+
+/* room options/new converstation/more options popup menu */
+[data-radix-menu-content] ._item_dyt4i_8 {
+    border-color: $vt-orange;
+}
+
+/* bg overlay if a contextual menu is opened */
+/* .mx_ContextualMenu_background {
+    background-color: hsla(32, 100%, 50%, 0.235);
+} */
+
+/* import & export icons in Encryption tab in settings, explore icon in explore button, + icon in Add extension button, invite icon in Invite button */
+._button_187yx_8[data-kind="secondary"] > svg {
+    color: $purple;
+}
+
+/* RoomList search animation */
+.mx_RoomListSearch {
+    .mx_RoomListSearch_search {
+        background-color: $vt-orange;
+        border-color: transparent;
+        color: $white;
+        transition:
+            background-color 0.2s ease,
+            color 0.2s ease;
+        svg {
+            fill: $white;
+            transition: fill 0.2s ease;
+        }
+    }
+}
+.mx_RoomListSearch {
+    .mx_RoomListSearch_search:hover {
+        background-color: $white;
+        color: $vt-orange;
+        svg {
+            fill: $vt-orange;
+        }
+    }
+}
+
+/* RoomSummaryCard search animation */
+.mx_RoomSummaryCard_search {
+    ._search_b2pjl_8 {
+        background-color: $vt-orange;
+        border: 1px solid transparent;
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    svg {
+        fill: $white;
+        transition: fill 0.2s ease;
+    }
+
+    input {
+        color: $white;
+        caret-color: $white;
+        transition: color 0.2s ease, caret-color 0.2s ease;
+    }
+
+    input::placeholder {
+        color: $white;
+        transition: color 0.2s ease;
+    }
+}
+
+@media (hover) {
+    .mx_RoomSummaryCard_search:hover {
+        ._search_b2pjl_8:hover {
+            background-color: $white;
+            border-color: $vt-orange;
+        }
+
+        svg {
+            fill: $vt-orange;
+        }
+
+        input {
+            color: $vt-orange;
+            caret-color: $vt-orange;
+        }
+
+        ._input_b2pjl_52::placeholder {
+            color: $vt-orange;
+        }
+    }
+}
+
+/* placeholder text color when hovered on search bar */
+/* @media (hover) {
+  ._search_b2pjl_8:hover ._input_b2pjl_52::placeholder {
+    color: $vt-orange;
+  }
+} */
+
+@media (hover) {
+    .mx_RoomSummaryCard_search:hover:focus-within {
+        ._search_b2pjl_8 {
+            background-color: $white;
+            border-color: $vt-orange;
+        }
+
+        svg {
+            fill: $vt-orange;
+        }
+
+        input {
+            color: $vt-orange;
+            caret-color: $vt-orange;
+        }
+
+        input::placeholder {
+            color: $vt-orange;
+        }
+    }
+}
+
+@media (hover) {
+    .mx_RoomSummaryCard_search:hover
+    ._input_b2pjl_52::-webkit-search-cancel-button {
+        filter: invert(45%) sepia(95%) saturate(1800%) hue-rotate(5deg);
+    }
+}
+.mx_RoomSummaryCard_search:focus-within:not(:hover)
+._input_b2pjl_52::-webkit-search-cancel-button {
+    filter: invert(1) brightness(1.2);
+}
+
+
+.mx_RoomSummaryCard_search:focus-within:not(:hover) {
+    ._search_b2pjl_8 {
+        background-color: $vt-orange;
+        border-color: transparent;
+    }
+
+    svg {
+        fill: $white;
+    }
+
+    input {
+        color: $white;
+        caret-color: $white;
+    }
+
+    input::placeholder {
+        color: $white;
+    }
+}
+
+
+
+
+
+
+.mx_Field {
+    label {
+        color: $mint;
+    }
+    input[type="text"]:hover {
+        color: $pinky;
+    }
+}
+
+.mx_Field {
+    input:focus {
+        color: $purple;
+    }
+}

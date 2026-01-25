@@ -92,6 +92,7 @@ export function enumerateThemes(): { [key: string]: string } {
         "dark": _t("common|dark"),
         /* custom themes */
         "light-cfgmgmt": "CfgMgmtCamp",
+        "light-vantosh-light": "VanTosh Light",
     };
     const customThemes = SettingsStore.getValue("custom_themes") || [];
     const customThemeNames: Record<string, string> = {};

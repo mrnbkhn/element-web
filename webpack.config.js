@@ -39,6 +39,7 @@ const cssThemes = {
     "theme-dark-custom": "./res/themes/dark-custom/css/dark-custom.pcss",
     /* custom themes */
     "theme-light-cfgmgmt": "./res/themes/cfgmgmt/css/cfgmgmt.pcss",
+    "theme-light-vantosh-light": "./res/themes/vantosh-light/css/vantosh-light.pcss"
 
 };
 
